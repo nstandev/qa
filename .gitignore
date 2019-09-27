@@ -1,0 +1,13 @@
+*.py[cod]
+*\.idea*
+!.gitignore
+*.pyc
+db.sqlite3
+**/node_modules*
+**.exe
+!logging.ini
+**.log
+*.png
+**.ini
+*.html
+

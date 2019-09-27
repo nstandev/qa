@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  baseline:
+    build: .
+    privileged: true
+    volumes:
+      - .:/home/chrome/qa/
+    command: bash /home/chrome/qa/start.sh
+    container_name: baseline
+    security_opt:
+      - seccomp:./chrome.json
